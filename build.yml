@@ -1,0 +1,32 @@
+sdkversion: "5.4.0"
+name: "RhoMobileApplication2"
+version: "1.0"
+vendor: "rhomobile"
+build: "debug"
+applog: "rholog.txt"
+iphone:
+  configuration: "Release"
+  sdk: "iphonesimulator9.2"
+  provisionprofile: 
+  codesignidentity: "iPhone Developer"
+  entitlements: 
+  BundleIdentifier: "com.rhomobile.rhomobileapplication2"
+  BundleURLScheme: "rhomobileapplication2"
+  production:
+    ipa_itunesartwork_image: "./production/iTunesArtwork.png"
+wp8:
+  productid: "b668e380-4b63-0134-89be-3085a93e011b"
+android:
+  version: "4.4.2"
+  logcatFilter: "APP:I StrictMode:I DEBUG:I *:E"
+wm: 
+win32:
+  deployqt: "1"
+  deploymsvc: "1"
+extensions:
+  - rhoconnect-client
+rhobundle:
+  exclude_items:
+    - thumb.db
+app_type: "rhoelements"
+capabilities: 
